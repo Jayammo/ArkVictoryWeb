@@ -1,25 +1,23 @@
-import React from 'react';
-import { AppBar, Toolbar, Typography, makeStyles } from "@material-ui/core";
+import React from "react";
+import { makeStyles} from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-        width: "85%",
-        backgroundColor: theme.palette.background.primary,
-        overflow: 'hidden',
-        position: 'fixed',
-        bottom: 0,
-      },
+  root: {
+      // position: 'fixed',
+      // left: 0,
+      // bottom: 0,
+      width: '100%',
+      textAlign: 'center',
+      backgroundColor: theme.palette.primary.main,
+      color: 'white',
+      marginTop: theme.spacing(2),
+  }
 }));
 
 const Footer = (props) => {
-    const classes = useStyles();
-
+  const classes = useStyles();
   return (
-    <AppBar className={classes.root}>
-      <Toolbar>
-        <Typography variant="h6">Footer</Typography>
-      </Toolbar>
-    </AppBar>
+    <div className={classes.root}>Footer</div>
   );
 };
 

@@ -18,9 +18,6 @@ const Nav = (props) => {
                     <Link to='/'> Home</Link>
                 </Grid>
                 <Grid item>
-                    <Link to='/content'> Content</Link>
-                </Grid>
-                <Grid item>
                     <Link to='/about'> About</Link>
                 </Grid>
             </Grid>        
