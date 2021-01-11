@@ -3,9 +3,6 @@ import { makeStyles} from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-      // position: 'fixed',
-      // left: 0,
-      // bottom: 0,
       width: '100%',
       textAlign: 'center',
       backgroundColor: theme.palette.primary.main,

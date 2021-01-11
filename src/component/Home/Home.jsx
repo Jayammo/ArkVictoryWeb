@@ -16,25 +16,7 @@ const Home = (props) => {
 
   return (
     <Grid container className={classes.root}>
-      <Grid container direction="row" justify="center" alignItems="center" item md={6} >
-        <HomeCard />
-      </Grid>
-      <Grid container direction="row" justify="center" alignItems="center" item md={6}>
-        <HomeCard />
-      </Grid>
-      <Grid container direction="row" justify="center" alignItems="center" item md={6}>
-        <HomeCard />
-      </Grid>
-      <Grid container direction="row" justify="center" alignItems="center" item md={6}>
-        <HomeCard />
-      </Grid>
-      <Grid container direction="row" justify="center" alignItems="center" item md={6}>
-        <HomeCard />
-      </Grid>
-      <Grid container direction="row" justify="center" alignItems="center" item md={6}>
-        <HomeCard />
-      </Grid>
-      <Grid container direction="row" justify="center" alignItems="center" item md={6}>
+      <Grid container direction="row" justify="center" alignItems="center" item md={12} >
         <HomeCard />
       </Grid>
     </Grid>

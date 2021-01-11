@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Grid, makeStyles } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Grid, makeStyles, Button } from '@material-ui/core';
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
@@ -13,14 +13,37 @@ const Nav = (props) => {
 
     return ( 
         <div className={classes.root} >
-            <Grid container direction="row" justify="space-evenly" alignItems="center">
-                <Grid item>
-                    <Link to='/'> Home</Link>
+        <AppBar position="static" color='primary'>
+          <Toolbar variant="dense">
+            <Grid container justify="center" alignItems="center">
+                <Grid item xs={3}>
+                <Button component={Link} to='/' size="medium" fullWidth={true}>
+                    <Typography variant='h5'> Home</Typography>
+                </Button>
                 </Grid>
-                <Grid item>
-                    <Link to='/about'> About</Link>
+                <Grid item xs={3}>
+                <Button component={Link} to='/about' size="medium" fullWidth={true}>
+                    <Typography variant='h5'>Church School</Typography>
+                </Button>
                 </Grid>
-            </Grid>        
+                <Grid item xs={3}>
+                <Button component={Link} to='/about' size="medium" fullWidth={true}>
+                    <Typography variant='h5'>Bible Study</Typography>
+                </Button>
+                </Grid>
+                <Grid item xs={3}>
+                <Button component={Link} to='/about' size="medium" fullWidth={true}>
+                    <Typography variant='h5'>Events</Typography>
+                </Button>
+                </Grid>
+                <Grid item xs={3}>
+                <Button component={Link} to='/about' size="medium" fullWidth={true}>
+                    <Typography variant='h5'>About</Typography>
+                </Button>
+                </Grid>
+            </Grid>
+            </Toolbar>
+            </AppBar>        
         </div>
      );
 }

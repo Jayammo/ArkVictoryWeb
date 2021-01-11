@@ -9,21 +9,20 @@ import {
   CardContent,
   CardMedia,
 } from "@material-ui/core";
-import cross from '../../../Images/golden-holy-cross.jpg';
+import cross from './../../../assets/cross.jpg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 375,
+    maxWidth: 800,
     margin: theme.spacing(2),
   },
   media: {
-    maxHeight: '140px',
+    maxHeight: '400px',
   },
 }));
 
 const HomeCard = (props) => {
   const classes = useStyles();
-
   return (
     <Card className={classes.root}>
       <CardActionArea>
@@ -34,11 +33,11 @@ const HomeCard = (props) => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+            Mission Statement
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            A one-sentence statement describing the reason an organization or 
+          program exists and used to help guide decisions about priorities, actions, and responsibilities.  
           </Typography>
         </CardContent>
       </CardActionArea>

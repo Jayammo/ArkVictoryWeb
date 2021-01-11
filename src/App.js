@@ -13,6 +13,8 @@ const useStyles = makeStyles((theme) => {
       display: "flex",
       flexDirection: "column",
       alignItems: 'center',
+      zIndex: 2,
+      backgroundColor:'#F5F5F5',
     },
     paper: {
       width: "75%",
@@ -25,6 +27,7 @@ const useStyles = makeStyles((theme) => {
       flexDirection: "row",
       justifyContent: "flex-start",
       height: '100%',
+      zIndex: 1,
     },
   };
 });
@@ -33,7 +36,7 @@ function App() {
   const classes = useStyles();
   return (
     <div className={classes.center}>
-        <Paper variant="outlined" square className={classes.paper}>
+        <Paper variant="outlined" square className={classes.paper} elevation={3}>
           <Router>
             <HeaderNav />
             <Switch>

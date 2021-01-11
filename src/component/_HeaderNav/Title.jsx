@@ -16,7 +16,7 @@ const Title = (props) => {
   return (
     <div className={classes.root}>
       <Typography variant="h3" component="h3">
-        Proof of Concept
+        Ark Victory Apostolic Church
       </Typography>
     </div>
   );
