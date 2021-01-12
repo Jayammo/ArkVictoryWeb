@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 import { Container, CssBaseline, makeStyles, Paper, Grid } from "@material-ui/core";
 import HeaderNav from "./component/_HeaderNav/HeaderNav";
-import Home from "./component/Home/Home";
-import About from "./component/About/About";
+import Home from "./component/Pages/Home/Home";
+import About from "./component/Pages/About/About";
 import Footer from "./component/Footer/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => {
       alignItems: 'center',
       zIndex: 2,
       backgroundColor:'#F5F5F5',
+      height: '100%',
     },
     paper: {
       width: "75%",
@@ -24,7 +25,6 @@ const useStyles = makeStyles((theme) => {
     content: {
       paddingTop: theme.spacing(5),
       display: "flex",
-      flexDirection: "row",
       justifyContent: "flex-start",
       height: '100%',
       zIndex: 1,
@@ -40,10 +40,8 @@ function App() {
           <Router>
             <HeaderNav />
             <Switch>
-              <Grid className={classes.content}>
                 <Route exact path="/about" component={About} />
                 <Route exact path="/" component={Home} />
-              </Grid>
             </Switch>
           </Router>
         </Paper>

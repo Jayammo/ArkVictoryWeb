@@ -33,11 +33,6 @@ const Nav = (props) => {
                 </Grid>
                 <Grid item xs={3}>
                 <Button component={Link} to='/about' size="medium" fullWidth={true}>
-                    <Typography variant='h5'>Events</Typography>
-                </Button>
-                </Grid>
-                <Grid item xs={3}>
-                <Button component={Link} to='/about' size="medium" fullWidth={true}>
                     <Typography variant='h5'>About</Typography>
                 </Button>
                 </Grid>
