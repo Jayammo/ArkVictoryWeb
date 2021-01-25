@@ -1,6 +1,8 @@
 import { makeStyles } from "@material-ui/core";
 import React from "react";
-import Blog from "./component/blog/Blog";
+import Footer from "./component/Footer/Footer";
+import Header from "./component/Header/Header";
+import Home from "./component/Pages/Home/Home";
 
 const useStyles = makeStyles((theme) => {
   console.log({ theme });
@@ -13,11 +15,24 @@ const useStyles = makeStyles((theme) => {
   };
 });
 
+const sections = [
+  { title: "Entertainment", url: "#" },
+  { title: "Donations received", url: "#" },
+  { title: "Certified Counseling Services", url: "#" },
+  { title: "Programs:", url: "#" },
+  { title: "About Us", url: "#" },
+];
+
 function App() {
   const classes = useStyles();
   return (
     <div className={classes.background}>
-      <Blog />
+      <Header title="Ark Victory Apostolic Church" sections={sections} />
+      <Home />
+      <Footer
+        title="Footer"
+        description="Something here to give the footer a purpose!"
+      />
     </div>
   );
 }
