@@ -61,9 +61,6 @@ function MainFeaturedPost(props) {
             <Typography variant="h6" color="inherit" paragraph>
               {post.description}
             </Typography>
-            <Link variant="subtitle1" href="#">
-              {post.linkText}
-            </Link>
           </div>
         </Grid>
       </Grid>

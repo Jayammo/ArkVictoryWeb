@@ -12,6 +12,7 @@ import Hidden from "@material-ui/core/Hidden";
 const useStyles = makeStyles({
   card: {
     display: "flex",
+    minHeight: "169.62px",
   },
   cardDetails: {
     flex: 1,
@@ -39,9 +40,6 @@ function FeaturedPost(props) {
               </Typography>
               <Typography variant="subtitle1" paragraph>
                 {post.description}
-              </Typography>
-              <Typography variant="subtitle1" color="primary">
-                Continue reading...
               </Typography>
             </CardContent>
           </div>

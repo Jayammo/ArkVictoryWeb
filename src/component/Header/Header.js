@@ -30,6 +30,9 @@ function Header(props) {
     <React.Fragment>
       <Toolbar className={classes.toolbar}>
         <Typography
+          onClick={() => {
+            window.location.href = "/";
+          }}
           component="h2"
           variant="h5"
           color="inherit"

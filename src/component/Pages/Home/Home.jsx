@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Grid, makeStyles } from "@material-ui/core";
 import React from "react";
 import handsTogetherOne from "../../../assets/HandsTogether1.jpg";
@@ -29,27 +30,29 @@ const mainFeaturedPost = {
 const featuredPosts = [
   {
     title: "Featured post",
-    date: "Nov 12",
-    description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content.",
+    date: "Feb 2021",
+    description: "Welcome to Ark Victory Apostolic Church Offical Webpage",
     image: handsTogetherOne,
     imageText: "Image Text",
   },
   {
-    title: "Post title",
-    date: "Nov 11",
-    description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content.",
+    title: "Progress",
+    date: "Feb 2021",
+    description: "More features coming soon",
     image: handsTogetherOne,
     imageText: "Image Text",
   },
 ];
 
-let posts = [post1];
-
 const Home = (props) => {
   const classes = useStyles();
-  console.log(posts);
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    fetch(post1)
+      .then((res) => res.text())
+      .then((md) => setPosts([md]));
+  }, []);
   return (
     <>
       <MainFeaturedPost post={mainFeaturedPost} />
@@ -59,7 +62,7 @@ const Home = (props) => {
         ))}
       </Grid>
       <Grid container spacing={5} className={classes.mainGrid}>
-        <Main title="Love One Another" posts={posts} />
+        <Main title="Our Story" posts={posts} />
       </Grid>
     </>
   );
