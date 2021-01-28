@@ -1,5 +1,7 @@
 
-/home              /
-/blog/my-post.php  /blog/my-post
-/news              /blog
-/cuties            https://www.petsofnetlify.com
+/home            /
+/entertainment  /entertainment
+/donations      /donations
+/cuties         /counseling
+/programs       /programs
+/about         /about
