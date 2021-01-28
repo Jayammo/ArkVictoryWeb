@@ -1,9 +1,11 @@
+
 import { makeStyles, CssBaseline, Container } from "@material-ui/core";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Footer from "./component/Footer/Footer";
 import Header from "./component/Header/Header";
 import Home from "./component/Pages/Home/Home";
+
 
 const useStyles = makeStyles((theme) => {
   console.log({ theme });
@@ -22,6 +24,7 @@ const sections = [
   { title: "Programs:", url: "/programs" },
   { title: "About Us", url: "/about" },
 ];
+
 
 function App() {
   const classes = useStyles();

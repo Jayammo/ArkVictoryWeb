@@ -1,3 +1,4 @@
+
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
@@ -17,6 +18,7 @@ const theme = createMuiTheme({
     background: {
       paper: "#f2f2f2",
     },
+
   },
 });
 
