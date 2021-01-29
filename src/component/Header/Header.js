@@ -22,9 +22,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const sections = [
+  { title: "Entertainment", url: "/entertainment" },
+  { title: "Donations received", url: "/donations" },
+  { title: "Certified Counseling Services", url: "/counseling" },
+  { title: "Programs:", url: "/programs" },
+  { title: "About Us", url: "/about" },
+];
 function Header(props) {
   const classes = useStyles();
-  const { sections, title } = props;
+  const { title } = props;
 
   return (
     <React.Fragment>
