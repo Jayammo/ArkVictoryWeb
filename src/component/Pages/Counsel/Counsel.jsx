@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Main from "../../Shared/Main/Main";
-import blog from "../../Shared/Blogs/blog-post.3.md";
+import blog from "../../Shared/Blogs/blog-post.2.md";
 import { Grid, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const About = (props) => {
+const Counsel = (props) => {
   const [posts, setPosts] = useState([]);
   const classes = useStyles();
 
@@ -21,9 +21,9 @@ const About = (props) => {
 
   return (
     <Grid container spacing={5} className={classes.mainGrid}>
-      <Main title="About Us" posts={posts} />
+      <Main title="Ark Community Development Center " posts={posts} />
     </Grid>
   );
 };
 
-export default About;
+export default Counsel;

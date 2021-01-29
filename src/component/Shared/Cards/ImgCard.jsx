@@ -3,49 +3,62 @@ import {
   makeStyles,
   Typography,
   Card,
-  Button,
   CardActionArea,
-  CardActions,
   CardContent,
+  CardMedia,
 } from "@material-ui/core";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   root: {
-    maxWidth: 800,
-    margin: theme.spacing(2),
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "500px",
   },
-  media: {
-    maxHeight: "200px",
-    width: "200px",
+  card: {
+    display: "flex",
+    height: "250px",
+    width: "100%",
   },
-}));
+  CardActionArea: {
+    display: "flex",
+  },
+  cardDetails: {
+    flex: 2,
+  },
+  cardMedia: {
+    flex: 1,
+    width: 160,
+  },
+});
 
 const ImgCard = (props) => {
-  const { image, content, title } = props;
+  const { post } = props;
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
-      <CardActionArea>
-        <img className={classes.media} src={image} alt="Logo" />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            {title}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            {content}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="secondary">
-          Share
-        </Button>
-        <Button size="small" color="secondary">
-          Learn More
-        </Button>
-      </CardActions>
-    </Card>
+    <div className={classes.root}>
+      <Card className={classes.card}>
+        <CardMedia
+          className={classes.cardMedia}
+          image={post.image}
+          title={post.imageText}
+        />
+        <div className={classes.cardDetails}>
+          <CardContent>
+            <Typography component="h2" variant="h5">
+              {post.title}
+            </Typography>
+            <Typography variant="subtitle1" color="textSecondary">
+              {post.date}
+            </Typography>
+            <Typography variant="subtitle1" paragraph>
+              {post.description}
+            </Typography>
+          </CardContent>
+        </div>
+      </Card>
+    </div>
   );
 };
 

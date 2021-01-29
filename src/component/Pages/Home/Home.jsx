@@ -34,6 +34,7 @@ const featuredPosts = [
     description: "Welcome to Ark Victory Apostolic Church Offical Webpage",
     image: handsTogetherOne,
     imageText: "Image Text",
+    smDown: true,
   },
   {
     title: "Progress",
@@ -41,6 +42,7 @@ const featuredPosts = [
     description: "More features coming soon",
     image: handsTogetherOne,
     imageText: "Image Text",
+    smDown: true,
   },
 ];
 
