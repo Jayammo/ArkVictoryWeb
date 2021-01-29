@@ -43,7 +43,7 @@ function FeaturedPost(props) {
               </Typography>
             </CardContent>
           </div>
-          <Hidden smDown>
+          <Hidden smDown={post.smDown}>
             <CardMedia
               className={classes.cardMedia}
               image={post.image}
