@@ -12,17 +12,16 @@ const useStyles = makeStyles({
   root: {
     display: "flex",
     justifyContent: "center",
+    alignItems: "center",
     height: "500px",
-  },
-  CardActionArea: {
-    display: "flex",
-    minHeight: "169.62px",
-    width: "80%",
   },
   card: {
     display: "flex",
-    minHeight: "169.62px",
+    height: "250px",
     width: "100%",
+  },
+  CardActionArea: {
+    display: "flex",
   },
   cardDetails: {
     flex: 2,
@@ -39,28 +38,26 @@ const ImgCard = (props) => {
 
   return (
     <div className={classes.root}>
-      <CardActionArea className={classes.CardActionArea} component="a" href="#">
-        <Card className={classes.card}>
-          <CardMedia
-            className={classes.cardMedia}
-            image={post.image}
-            title={post.imageText}
-          />
-          <div className={classes.cardDetails}>
-            <CardContent>
-              <Typography component="h2" variant="h5">
-                {post.title}
-              </Typography>
-              <Typography variant="subtitle1" color="textSecondary">
-                {post.date}
-              </Typography>
-              <Typography variant="subtitle1" paragraph>
-                {post.description}
-              </Typography>
-            </CardContent>
-          </div>
-        </Card>
-      </CardActionArea>
+      <Card className={classes.card}>
+        <CardMedia
+          className={classes.cardMedia}
+          image={post.image}
+          title={post.imageText}
+        />
+        <div className={classes.cardDetails}>
+          <CardContent>
+            <Typography component="h2" variant="h5">
+              {post.title}
+            </Typography>
+            <Typography variant="subtitle1" color="textSecondary">
+              {post.date}
+            </Typography>
+            <Typography variant="subtitle1" paragraph>
+              {post.description}
+            </Typography>
+          </CardContent>
+        </div>
+      </Card>
     </div>
   );
 };
