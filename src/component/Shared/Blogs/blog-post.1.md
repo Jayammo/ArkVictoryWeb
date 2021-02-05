@@ -9,5 +9,5 @@ The two churches have emerged. Rev.
 Doris Tongo is the Pastor. We believe in the Sacred Gospel of Jesus Christ. We believe in Togetherness as
 a community. (Family) Our programs are taught from our Community Development Center. The Ark
 Realty and Construction is our Real estate arm and we have a United Federation of Churches as our
-Association arm. The Ark Caring Program is a Supportive Living Program. Al these programs need to be
+Association arm. The Ark Caring Program is a Supportive Living Program. Each of these programs needs to be
 highlighted.

@@ -1,7 +1,0 @@
-
-/home            /
-/entertainment  /entertainment
-/donations      /donations
-/cuties         /counseling
-/programs       /programs
-/about         /about
