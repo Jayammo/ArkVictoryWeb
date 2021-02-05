@@ -57,6 +57,7 @@ const Home = (props) => {
 			.then((res) => res.text())
 			.then((md) => setPosts([md]));
 	}, []);
+
 	return (
 		<>
 			<MainFeaturedPost post={mainFeaturedPost} />
