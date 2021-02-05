@@ -47,15 +47,24 @@ function MainFeaturedPost(props) {
 	return (
 		<Paper
 			className={classes.mainFeaturedPost}
-			style={{
-				backgroundImage: `url(${post.image})`,
-				backgroundSize: '100% 350px',
-				backgroundRepeat: 'no-repeat',
-			}}
+			// style={{
+			// 	backgroundImage: `url(${post.image})`,
+			// 	backgroundSize: '100% 350px',
+			// 	backgroundRepeat: 'no-repeat',
+			// }}
 		>
 			<div className={classes.overlay} />
 			<Grid container>
-				<Grid item md={7}>
+				<Grid
+					item
+					md={7}
+					style={{
+						backgroundImage: `url(${post.image})`,
+						backgroundSize: '100% 100%',
+						backgroundRepeat: 'no-repeat',
+						border: '5px solid black',
+					}}
+				>
 					<div className={classes.mainFeaturedPostContent}>
 						<Typography variant='h4' color='inherit' gutterBottom>
 							{post.title}
@@ -64,6 +73,19 @@ function MainFeaturedPost(props) {
 							{post.description}
 						</Typography>
 					</div>
+				</Grid>
+				<Grid
+					item
+					md={5}
+					style={{
+						border: '5px solid black',
+					}}
+				>
+					<img
+						src={post.backgroundImage}
+						alt={post.imageText}
+						style={{ height: '100%', width: '100%' }}
+					/>
 				</Grid>
 			</Grid>
 		</Paper>
