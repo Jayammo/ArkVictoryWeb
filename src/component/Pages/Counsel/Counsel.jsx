@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Main from "../../Shared/Main/Main";
-import blog from "../../Shared/Blogs/blog-post.2.md";
+import blog from "../../Shared/Blogs/blog-post.3.md";
 import { Grid, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
